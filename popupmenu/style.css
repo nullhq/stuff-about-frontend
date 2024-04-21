@@ -1,0 +1,184 @@
+
+*, ::before, ::after {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+body {
+
+    background: #333;
+}
+
+.popup-container {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+
+.menu .line {
+    width: 50px;
+    height: 4px;
+    border-radius: 15px;
+    background: #333;
+    transition: all 0.2s 0.2s ease-in-out;
+
+}
+
+.popup-container.activate .menu .line {
+    background: transparent;
+}
+
+.popup-container.activate .menu .line::before {
+    transform: translateY(10px) rotate(-45deg);
+}
+
+.popup-container.activate .menu .line::after {
+    transform: translateY(-5px) rotate(45deg);
+}
+
+.menu .line::before {
+    content: '';
+    width: 50px;
+    height: 4px;
+    position: absolute;
+    top: 30px;
+    border-radius: 5px;
+    background: #333;
+    transition: all 0.2s 0.1s ease-in-out;
+
+}
+
+.menu .line::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    position: absolute;
+    bottom: 30px;
+    border-radius: 5px;
+    background: #333;
+    transition: all 0.2s 0.1s ease-in-out;
+
+}
+
+
+.popup-container .option {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-container .opt-1 {
+    background: #e0fefe;
+    transition: all 0.2s 0.1s ease-in-out;
+}
+.popup-container .opt-2 {    
+    background: #c7ceea;
+    transition: all 0.2s 0.2s ease-in-out;
+}
+
+.popup-container .opt-3 {    
+    background: #ffdac1;
+    transition: all 0.2s 0.3s ease-in-out;
+}
+
+.popup-container .opt-4 {
+    background: #ff9aa2;
+    transition: all 0.2s 0.5s ease-in-out;
+}
+
+.popup-container .opt-5 {
+    background: #ffffd8;
+    transition: all 0.2s 0.6s ease-in-out;
+}
+.popup-container .opt-6 {    
+    background: #b5ead7;
+    transition: all 0.2s 0.7s ease-in-out;
+}
+
+.popup-container .opt-7 {    
+    background: gold;
+    transition: all 0.2s 0.8s ease-in-out;
+}
+
+.popup-container .opt-8 {
+    background: darksalmon;
+    transition: all 0.2s 0.9s ease-in-out;
+}
+
+/* Animation Part_____________ 1143 plein de soucis mais j'suis LA 😉*/
+.popup-container.activate .opt-1 {
+    top: 50%;
+    left: 0;
+}
+
+.popup-container.activate .opt-2 {    
+    top: 50%;
+    left: 100%;
+}
+
+.popup-container.activate .opt-3 {    
+    left: 50%;
+    top: 0;
+}
+
+.popup-container.activate .opt-4 {
+    left: 50%;
+    top: 100%;
+}
+
+.popup-container.activate .opt-5 {
+    left: 85%;
+    top: 15%;
+}
+
+.popup-container.activate .opt-6 {    
+    left: 15%;
+    top: 15%;
+}
+
+.popup-container.activate .opt-7 {    
+    left: 15%;
+    top: 85%;
+}
+
+.popup-container.activate .opt-8 {
+    left: 85%;
+    top: 85%;
+}
+
+

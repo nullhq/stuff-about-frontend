@@ -1,0 +1,314 @@
+/* font-family: 'Manrope', sans-serif; */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+html{
+    font-size: 13px;
+}
+
+body{
+    background-color: hsl(210, 46%, 95%);
+    max-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Desktop version------------- */
+
+header{
+    display: none;
+}
+
+main{
+    min-width: 100%;
+    min-height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.heart-part{
+    width: 730px;
+    height: 280px;
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 20px hsl(211, 46%, 95%) ;
+}
+
+.heart-part .img-container-left-part {
+    width: 283px;
+    height: 100%;
+}
+
+.heart-part .img-container-left-part img{
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.heart-part .text-container-right-part {
+    width: calc(730px - 283px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 50px;
+    color:hsl(214, 17%, 51%);
+}
+
+.heart-part .text-container-right-part p:first-child{
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color:hsl(217, 19%, 35%);
+}
+
+.heart-part .footer-container-part{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.heart-part .footer-container-part .left-img-name-date{
+    display: flex;
+}
+
+.heart-part .footer-container-part .name-date h2{
+    color:hsl(217, 19%, 35%);
+    font-size: 1.2rem;
+}
+
+.share-container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.display-part-current-hidden{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: 400ms;
+}
+
+.display-part-current-hidden.view-parent{
+    opacity: 1;
+    pointer-events: initial;
+    visibility: visible;
+    height: auto;
+    transition: 400ms;
+}
+
+.display-part-current-hidden div.el-foot{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -28px;
+    border: 0 solid transparent;
+    border-left-width:12px;
+    border-top:12px solid hsl(217, 19%, 35%);
+    border-right-width:12px;
+    transition:  200ms;
+}
+
+.heart-part .footer-container-part .hover-visible-link-container{
+    width: 248px;
+    background-color:hsl(217, 19%, 35%);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 67px;
+    box-shadow: 5px 4px 10px 1px hsla(210, 46%, 95%, 0.701) ;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    height: 0;
+    transition: 400ms;
+}
+
+.heart-part .footer-container-part .hover-visible-link-container.view-child{
+    height: 55px;
+    opacity: 1;
+    pointer-events: initial;
+    visibility: visible;
+    transition: 400ms;
+}
+
+.hover-visible-link-container span{
+    margin: 1px;
+    cursor: pointer;
+}
+
+.hover-visible-link-container span:first-child{
+    color:hsl(214, 24%, 73%);
+    letter-spacing: 5px;
+}
+
+.share-ico{
+    background-color: hsl(210, 46%, 95%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.heart-part .footer-container-part .left-img-name-date img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+footer{
+    min-height: 2vh;
+    color: hsl(214, 24%, 73%);
+    font-weight: 700;
+}
+
+footer a{
+    text-decoration: none;
+    color: hsl(217, 19%, 35%)
+}
+
+
+/* Mobile version--------------- */
+
+@media (max-width: 850px){
+    .heart-part{
+        width: 327px;
+        height: 515px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heart-part .img-container-left-part {
+        width: 100%;
+        height: 200px;
+    }
+
+    .heart-part .img-container-left-part img{
+        border-radius: 10px 10px 0 0 ;
+    }
+
+    .heart-part .text-container-right-part {
+        width: 100%;
+        height: calc(515px - 200px);
+        padding:40px 30px 10px 30px;
+        justify-content: space-around;
+    }
+
+    .heart-part .text-container-right-part p{
+        max-width: 300px;
+    }
+
+    .heart-part .text-container-right-part p:first-child{
+        margin-top: 0;
+        max-width: 300px;
+        font-size: 1.3rem;
+    }
+
+    .heart-part .footer-container-part{
+        max-width: 300px;
+        margin: 0;
+    }
+
+    .display-part-current-hidden{
+        height: 0;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        transition: 400ms;
+    }
+
+    .display-part-current-hidden.view-parent{
+        display: flex;
+        opacity: 1;
+        pointer-events: initial;
+        visibility: visible;
+        height: auto;
+        transition: 400ms;
+    }
+
+    .heart-part .text-container-right-part .this-last-p{
+        padding-right: 10px;
+    }
+
+    .heart-part .footer-container-part .hover-visible-link-container{
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+        height: 0;
+        top: -4px;
+        right: -30.10px;
+        border-radius: 0 0 10px 10px;
+        z-index: 5;
+        background-color: hsl(217, 19%, 35%);
+        transition: 400ms;
+    }
+
+    .heart-part .footer-container-part .hover-visible-link-container.view-child{
+        width: 327px;
+        height: 70px;
+        opacity: 1;
+        pointer-events: initial;
+        justify-content: flex-start;
+        visibility: visible;
+        transition: 400ms;
+    }
+
+    .hover-visible-link-container span:first-child{
+        margin: 0 0 0 33px ;
+        cursor: default;
+        letter-spacing: 7px;
+    }
+
+    .hover-visible-link-container span:not(span:last-child){
+        margin-right: 15px;
+    }
+
+    .display-part-current-hidden div.el-foot{
+       display: none;
+       transition: 400ms;
+    }
+
+    .share-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .share-ico.viewer{
+        z-index: 10;
+        margin-top: 9px;
+        background-color: hsl(214, 17%, 51%);
+    }
+
+    .share-ico.viewer svg path{
+      fill: #ffff;
+      transition: 200ms;
+    }
+}

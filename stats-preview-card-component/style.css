@@ -1,0 +1,202 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+}
+
+
+/* (card background): hsl(244, 38%, 16%) */
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 850px;
+    height: 320px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 6px;
+}
+
+/* card-container-text-part */
+
+.card-container-text-part {
+    width: 56%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.card-container-text-part h1{
+    font-size: 1.9rem;
+    margin-bottom: .6em;
+}
+
+.card-container-text-part h1 span{
+    color: hsl(277, 64%, 61%); 
+}
+
+.card-container-text-part p{
+    color: hsla(0, 0%, 100%, 0.57);
+    font-size: .8rem;
+    width: 90%;
+    margin-bottom: 3em;
+    line-height: 1.5;
+}
+
+.card-container-text-part div.mention-part{
+    display: flex;
+    justify-content: space-between;
+    max-width: 85%;
+}
+
+.card-container-text-part div div.mention-ctn{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+}
+
+.card-container-text-part div .mention-ctn span:first-child{
+    font-weight: 700;
+}
+
+.card-container-text-part div .mention-ctn span:last-child{
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    margin-top: 3px;
+    font-size: .8rem;
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: .6px;
+}
+
+
+/* card-container-img-part */
+
+.card-container-img-part{
+    height: 100%;
+    position: relative;
+    flex: 1;
+}
+
+.card-container-img-part img{
+    width: auto;
+    height: 100%;
+    border-radius: 0 6px 6px 0;
+    object-fit: cover;
+}
+
+.card-container-img-part .overlay-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: none;
+    border-radius: 0 6px 6px 0;
+    background-color:  hsla(277, 64%, 61%, 0.5);
+}
+
+/* pseudo-signature */
+
+.attribution { 
+    font-size: 11px; 
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center; 
+    padding-top: 1em;
+}
+
+.attribution a { 
+    color: hsl(277, 64%, 61%); 
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none; 
+}
+
+
+
+/* Mobile version - - - - - #000001 */
+
+@media (max-width: 855px) {
+    .card-container{
+       flex-direction: column-reverse;
+       width: 340px;
+       height: 700px;
+    }
+
+    /* card-container-text-part */
+
+    .card-container-text-part {
+        width: 100%;
+        height: 63%;
+        align-items: center;
+        padding: 1.78em;
+    }
+
+    .card-container-text-part h1{
+    text-align: center;
+    font-size: 1.5rem;
+    }
+
+    .card-container-text-part p{
+        text-align: center;
+        font-size: .75em;
+    }
+
+    .card-container-text-part div.mention-part{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-container-text-part div div.mention-ctn{
+        margin-right: 0;
+        margin-bottom: 2em;
+    }
+    .card-container-text-part div div.mention-ctn:last-child{
+        margin-bottom: 0;
+    }
+
+
+    /* card-container-img-part */
+
+        .card-container-img-part{
+            width: 100%;
+            height: 37%;
+            position: relative;
+        }
+        
+        .card-container-img-part img{
+            width: 100%;
+            height: 100%;
+            border-radius: 6px  6px 0  0;
+        }
+        .card-container-img-part .overlay-img{
+            border-radius: 6px 6px 0 0;
+        }
+}
+
+@media (max-width: 350px) {
+    .card-container{
+       width: 97%;
+
+    }
+
+    .card-container-text-part {
+        padding: 0;
+    }
+
+}

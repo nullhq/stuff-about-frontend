@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+html{
+    font-size: 15px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/* Desktop version----001 */
+
+.collum-container{
+    display: flex;
+    width: 900px;
+    height: 500px;
+}
+
+.collum-container .sedans{
+    background-color:  hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.collum-container .suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.collum-container .luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.collum-container>div{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33.33333333333333%;
+}
+.collum-container>div img{
+    width: 60px;
+}
+.collum-container>div h1{
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+
+.collum-container>div p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height:1.3;
+}
+
+.collum-container>div button{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    height: 50px;
+    width: 85%;
+    border-radius: 60px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.collum-container>div button:hover{
+    background: none;
+    border: solid hsl(0, 0%, 95%) 3px;
+    color: hsl(0, 0%, 95%);
+    transition: 400ms;
+}
+
+button.sedan{
+    color: hsl(31, 77%, 52%);
+}
+
+button.suv{
+    color: hsl(184, 100%, 22%);
+}
+
+button.luxur{
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution{
+    text-align: center;
+    width: 100%;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: hsl(179, 100%, 13%);
+}
+
+/* Tablette version----002 */
+
+@media (max-width: 905px) {
+    .collum-container{
+        width: 98.5%;
+    }
+
+    .collum-container>div button{
+        width: 85%;
+    }
+}
+
+/* Mobile version-----003 */
+
+
+@media (max-width: 660px) {
+    .collum-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-top: 1em;
+    }
+    .collum-container>div {
+        width: 80%;
+        height: 450px;
+    }
+    .collum-container>div button{
+        width: 60%;
+    }
+    .collum-container .sedans{
+        border-radius: 10px 10px 0 0;
+    }
+    .collum-container .luxury{
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .collum-container>div {
+        width: 95%;
+        height: 450px;
+    }
+}

@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+
+}
+
+body{
+    font-size: 18px;
+    width: 100%;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Desktop version -------------- */
+
+.page-container{
+    display: flex;
+    width: 540px;
+    height: 360px;
+    border-radius: 15px;
+    box-shadow: 10px 20px  50px 40px hsla(252, 82%, 69%, 0.020);
+}
+
+/* Left part container of my summary */
+
+
+.left-part-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: hsl(252, 96%, 60%);
+    color: hsla(222, 100%, 96%, 0.73);
+}
+
+.left-part-container .fist{
+    margin-bottom: 1em;
+    color: hsla(222, 100%, 96%, 0.863);
+    font-weight: 800;
+}
+
+.left-part-container .resultCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1em;
+    border-radius: 50%;
+    background: linear-gradient(hsla(241, 72%, 46%, 0.8)20%,hsl(252, 96%, 60%));
+    font-weight: 600;
+}
+
+.left-part-container .second span{
+    font-size: 3em;
+    font-weight: 900;
+    color: white;
+}
+
+.left-part-container strong{
+    margin-bottom: .7em;
+    font-weight: 700;
+    font-size: 1.5em;
+    display: block;
+    color: white;
+
+}
+
+.left-part-container .third{
+    font-size: 17px;
+}
+
+/* Right part conntainer of my summary */
+
+.right-part-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0 1em 0;
+    color: rgba(0, 0, 0, 0.745);
+}
+
+.right-part-container .four{
+    width: 100%;
+    text-align: left;
+    font-weight: 800;
+    padding-left: 1em;
+
+}
+
+.right-part-container .container-right div{
+    display: flex ;
+    align-items: center;
+    width: 230px;
+    height: 40px;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 6px;
+}
+
+.right-part-container .container-right div p{
+    width: 100%;
+
+}
+
+.right-part-container .container-right div p:first-child{
+    display: flex;
+    text-align: left;
+}
+
+.right-part-container .container-right div p:last-child{
+    text-align: right;
+}
+
+.right-part-container .container-right div p img{
+    margin-right: 7px;
+}
+
+.right-part-container button{
+    width: 87%;
+    height: 37px;
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.right-part-container button:hover{
+    background-color:hsl(252, 96%, 60%);
+    transition: 400ms;
+}
+
+/* bg-color */
+
+.red, .orange, .green, .blue{
+    font-size: 15px;
+}
+
+.red{
+    background: hsla(0, 100%, 67%, 0.1);
+}
+
+.orange{
+    background: hsla(39, 100%, 56%, 0.1);
+}
+
+.green{
+    background: hsla(166, 100%, 37%, 0.1);
+}
+
+.blue{
+    background: hsla(234, 85%, 45%, 0.1);
+}
+
+/* color */
+
+.red p:first-child{
+    color: hsl(0, 100%, 67%);
+}
+
+.orange p:first-child{
+    color:  hsl(39, 100%, 56%);
+}
+
+.green p:first-child{
+    color: hsl(166, 100%, 37%);
+}
+
+.blue p:first-child{
+    color: hsl(234, 85%, 45%);
+}
+
+/* weight */
+
+.bold-note{
+    font-weight: 700;
+}
+
+
+
+/* Mobile version --------------- */
+
+@media all and (max-width: 565px) {
+
+    .page-container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center ;
+        width: 70%;
+        height: 700px;
+        border-radius: 15px  15px 0 0;
+    }
+
+    .left-part-container, .right-part-container{
+        width: 100%;
+    }
+
+    .left-part-container{
+        height: 320px;
+        border-radius: 0 0 15px 15px;
+        padding: 1em;
+    }
+     .right-part-container .container-right{
+        width: 100%;
+    }
+
+    .right-part-container .container-right div{
+        width: 90%;
+        margin: 1em auto;
+    }
+    
+     .left-part-container .resultCont{
+        width: 130px;
+        height: 130px;
+    }
+    .left-part-container .fist{
+        font-size: 16px;
+    }
+    .left-part-container strong{
+        font-size: 20px;
+    }
+    .left-part-container .third{
+        font-size: 15px;
+    }
+   
+
+}

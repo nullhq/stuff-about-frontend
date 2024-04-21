@@ -1,0 +1,60 @@
+[submodule "popupmenu"]
+	path = popupmenu
+	url = https://github.com/istfredy/popupmenu.git
+[submodule "ping-comming-soon-page"]
+	path = ping-comming-soon-page
+	url = https://github.com/istfredy/ping-comming-soon-page.git
+[submodule "single-price-grid-component"]
+	path = single-price-grid-component
+	url = https://github.com/istfredy/single-price-grid-component.git
+[submodule "intro-component-with-signup-form"]
+	path = intro-component-with-signup-form
+	url = https://github.com/istfredy/intro-component-with-signup-form.git
+[submodule "base-apparel-comming-soon"]
+	path = base-apparel-comming-soon
+	url = https://github.com/istfredy/base-apparel-comming-soon.git
+[submodule "four-card-feature-section"]
+	path = four-card-feature-section
+	url = https://github.com/istfredy/four-card-feature-section.git
+[submodule "article-preview-component"]
+	path = article-preview-component
+	url = https://github.com/istfredy/article-preview-component.git
+[submodule "social-proof-section"]
+	path = social-proof-section
+	url = https://github.com/istfredy/social-proof-section.git
+[submodule "huddle-landing-page-with-single-introductory-section-master"]
+	path = huddle-landing-page-with-single-introductory-section-master
+	url = https://github.com/istfredy/huddle-landing-page-with-single-introductory-section-master.git
+[submodule "faq-accordion-card"]
+	path = faq-accordion-card
+	url = https://github.com/istfredy/faq-accordion-card.git
+[submodule "profile-card-component"]
+	path = profile-card-component
+	url = https://github.com/istfredy/profile-card-component.git
+[submodule "product-preview-card-component"]
+	path = product-preview-card-component
+	url = https://github.com/istfredy/product-preview-card-component.git
+[submodule "3-column-preview-card-component"]
+	path = 3-column-preview-card-component
+	url = https://github.com/istfredy/3-column-preview-card-component.git
+[submodule "stats-preview-card-component"]
+	path = stats-preview-card-component
+	url = https://github.com/istfredy/stats-preview-card-component.git
+[submodule "order-summary-component"]
+	path = order-summary-component
+	url = https://github.com/istfredy/order-summary-component.git
+[submodule "nft-preview-card-component"]
+	path = nft-preview-card-component
+	url = https://github.com/istfredy/nft-preview-card-component.git
+[submodule "interactive-rating-component"]
+	path = interactive-rating-component
+	url = https://github.com/istfredy/interactive-rating-component.git
+[submodule "result-summary-component"]
+	path = result-summary-component
+	url = https://github.com/istfredy/result-summary-component.git
+[submodule "qr-code-component"]
+	path = qr-code-component
+	url = https://github.com/istfredy/qr-code-component.git
+[submodule "getGPT"]
+	path = getGPT
+	url = https://github.com/istfredy/getGPT.git

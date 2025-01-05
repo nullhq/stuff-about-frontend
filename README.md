@@ -32,6 +32,6 @@ Between December 2022 and April 2023, I dedicated my efforts to crafting various
 
 ### Get Involved
 
-Feel free to clone any project and compare it with your own solutions. Your feedback is invaluable! If you have any questions or suggestions, reach out to me on [LinkedIn](https://www.linkedin.com/in/taboutsafredy/). I'm always ready to chat and offer insights into frontend development.
+Feel free to clone any project and compare it with your own solutions. Your feedback is invaluable! If you have any questions or suggestions, reach out to me on [Telegram](https://t.me/itsfredy). I'm always ready to chat and offer insights into frontend development.
 
 Happy coding!
